@@ -1,0 +1,76 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: monospace, 'Courier New', Courier;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+div#box {
+  background-color: darkgray;
+  position: relative;
+  margin: 10px;
+  border: 2px solid black;
+  height: 300px;
+  overflow: auto;
+}
+div#boxTitle {
+  background-color: #FFFFFF;
+  margin: 0 0 10px 10px;
+  border: 1px solid #000000;
+  float: right;
+  width: 125px;
+  text-align: center;
+}
+div#boxContent {
+  /*background-color: #A52A2A;*/
+  margin: 20px 10px 20px 10px;
+  
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Desktop Display **********/
+/* 3 boxes:
+ - Each take equal amount of room.
+ - All on the same row
+*/
+@media (min-width: 992px) {
+  .col-lg {
+    float: left;
+    width: 33.33%
+  }
+}
+
+/********** Tablet Display **********/
+/* 3 boxes:
+ - Row 1: 2 boxes taking equal amount of room.
+ - Row 2: 1 box taking the entire row.
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-r1 {
+    float: left;
+    width: 50%;
+  }
+  .col-md-r2 {
+    width: 100%;
+    clear: both;
+  }
+}
+
+
+/********** Mobile Display **********/
+/* 3 boxes:
+ - Each box takes the entire row (stack boxes vertically).
+*/
+@media (max-width: 767px) {
+  .col-sm {
+    width: 100%;
+    clear: both;
+  }
+}
