@@ -11,30 +11,62 @@ h1 {
 p {
   margin: 15px;
 }
+#box1 {
+  height: 100%;
+  margin-left: 10px;
+  border: 2px solid #000000;
+  background-color: #999999;
 
-#box {
-  background-color: darkgray;
-  position: relative;
-  margin: 20px;
-  border: 2px solid black;
-  height: 175px;
-  overflow: auto;
 }
-#boxTitle {
+#box2 {  
+  height: 100%;
+  background-color: #999999;
+  border: 2px solid #000000;
+}
+#box3 {
+  height: 100%;
+  background-color: #999999;
+  margin-right: 10px;
+  border: 2px solid #000000;
+}
+#boxTitle1 {
   background-color: #FFFFFF;
-  margin: 0 0 10px 10px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
   padding: 5px;
-  border: 1px solid #000000;
-  float: right;
+  border: 2px solid #000000;
+  width: 125px;
+  text-align: center;
+}
+#boxTitle2 {
+  background-color: #FFFF00;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  padding: 5px;
+  border: 2px solid #000000;
+  width: 125px;
+  text-align: center;
+}
+#boxTitle3 {
+  background-color: #FF00FF;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  padding: 5px;
+  border: 2px solid #000000;
   width: 125px;
   text-align: center;
 }
 #boxContent {
   /*background-color: #A52A2A;*/
-  margin: 10px;
-  clear: both;
+  position: relative;
+  overflow: auto;
+  top: 35px;
+  height: 83%;
+  padding: 0px 5px 5px 0px;
 }
-
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
@@ -47,8 +79,23 @@ p {
 */
 @media (min-width: 992px) {
   .col-lg {
+    position: relative;
     float: left;
     width: 33.33%;
+    padding: 0px 10px 20px 10px;
+    height: 250px;
+  }
+  /*** Adjusting Attributes ***/
+
+  #boxTitle1 {
+    background-color: #d49797;
+  }
+  #boxTitle2 {
+    background-color: #c14543;
+    color: #FFFFFF;
+  }
+  #boxTitle3 {
+    background-color: #e5d198;
   }
 }
 
@@ -59,68 +106,32 @@ p {
 */
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-6 {
+    position: relative;
     float: left;
     width: 50%;
+    padding: 0px 10px 20px 10px;
+    height: 250px;
   }
   .col-md-12 {
+    position: relative;
     clear: both;
     width: 100%;
+    padding: 0px 10px 20px 20px;
+    height: 250px;
   }
-  #box1 {
-    background-color: darkgray;
-    position: relative;
-    margin: 0px 5px 0px 20px;
-    border: 2px solid black;
-    height: 175px;
-    overflow: auto;
-  }
+  /*** Adjusting Attributes ***/
   #box2 {
-    background-color: darkgray;
-    position: relative;
-    margin: 0px 20px 20px 20px;
-    border: 2px solid black;
-    height: 175px;
-    overflow: auto;
-  }
-  #box3 {
-    background-color: darkgray;
-    position: relative;
-    margin: 0px 20px 0px 20px;
-    border: 2px solid black;
-    height: 175px;
-    overflow: auto;
+    margin-right: 10px;
   }
   #boxTitle1 {
-    background-color: #FFFFFF;
-    margin: 0 0 10px 10px;
-    padding: 5px;
-    border: 1px solid #000000;
-    float: right;
-    width: 125px;
-    text-align: center;
+    background-color: #bfff00;
   }
   #boxTitle2 {
-    background-color: #FFFF00;
-    margin: 0 0 10px 10px;
-    padding: 5px;
-    border: 1px solid #000000;
-    float: right;
-    width: 125px;
-    text-align: center;
+    background-color: #40ff00;
+    right: 20px;
   }
   #boxTitle3 {
-    background-color: #FF00FF;
-    margin: 0 0 10px 10px;
-    padding: 5px;
-    border: 1px solid #000000;
-    float: right;
-    width: 125px;
-    text-align: center;
-  }
-  #boxContent {
-    /*background-color: #A52A2A;*/
-    margin: 10px;
-    clear: both;
+    background-color: #00ff80;
   }
 }
 
@@ -131,7 +142,35 @@ p {
 */
 @media (max-width: 767px) {
   .col-sm {
-    width: 100%;
+    position: relative;
     clear: both;
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+    height: 250px;
+  }
+  /*** Adjusting Attributes ***/
+  #box1 {
+    margin: 0px;
+  }
+  #box2 {
+    margin: 0px;
+  }
+  #box3 {
+    margin: 0px;
+  }
+  #boxTitle1 {
+    right: 20px;
+    background-color: #005F55;
+    color: #AAFFFF;
+  }
+  #boxTitle2 {
+    right: 20px;
+    background-color: #A0A016;
+    color: #FFFF00;
+  }
+  #boxTitle3 {
+    right: 20px;
+    background-color: #002B36;
+    color: #FFFFFF;
   }
 }
