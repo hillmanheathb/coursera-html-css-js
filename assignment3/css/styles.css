@@ -51,7 +51,7 @@
 @media (max-width: 767px) {
   /*Header*/
   #collapsable-nav {
-    padding: 10px;
+    padding: 0;
   }
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
